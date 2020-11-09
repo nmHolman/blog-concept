@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: 
+        "hd hd hd hd"
+        "nav nav nav nav"
+        "feat feat feat feat"
+        "ar ar ar ar"
+        "ft ft ft ft"
+    ;
+
+}
+
+.header {
+    grid-area: hd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+}
+
+.feature {
+    grid-area: feat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+}
+
+.archive {
+    grid-area: ar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+}
+
+.footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+}
