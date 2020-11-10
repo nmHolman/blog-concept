@@ -3,8 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-row: auto auto auto auto;
     grid-template-areas: 
-        "tn ti ti"
         "tn dt dt"
+        "tn ti ti"
         "tn desc desc"
         "tn desc desc"
     ;
