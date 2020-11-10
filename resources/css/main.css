@@ -1,9 +1,17 @@
+@import 'cards.css';
+
+html, body {
+    margin: 0px;
+}
+
 .container {
+    margin: 0px;
+    min-height: 100vh;
     display: grid;
     width: 100%;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas: 
         "hd hd hd hd"
         "nav nav nav nav"
@@ -11,11 +19,11 @@
         "ar ar ar ar"
         "ft ft ft ft"
     ;
-
 }
 
 .header {
     grid-area: hd;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +31,10 @@
 }
 
 .nav {
+    height: 50px;
     grid-area: nav;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     outline: 2px solid black;
 }
@@ -33,23 +42,38 @@
 .feature {
     grid-area: feat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     outline: 2px solid black;
+    padding: 25px 5px;
 }
 
 .archive {
     grid-area: ar;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: flex-start;
+    padding: 10px 0px;
     outline: 2px solid black;
+}
+
+.archive #scroll {
+    position: absolute;
+    font-size: 12px;
+    right: 10px;
+    margin: auto;
 }
 
 .footer {
     grid-area: ft;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     outline: 2px solid black;
 }
+

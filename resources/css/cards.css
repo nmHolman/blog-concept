@@ -1,0 +1,64 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto auto auto auto;
+    grid-template-areas: 
+        "tn ti ti"
+        "tn dt dt"
+        "tn desc desc"
+        "tn desc desc"
+    ;
+
+    outline: 2px solid red;
+    height: 150px;
+    width: 90%;
+    margin: 15px 0px;
+}
+
+.card #card-thumbnail {
+    grid-area: tn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card #card-title {
+    grid-area: ti;
+    background-color: lightpink;
+}
+
+.card #card-date {
+    grid-area: dt;
+    background-color: lightskyblue;
+}
+
+.card #card-summary {
+    grid-area: desc;
+    background-color: lime;
+}
+
+.archive-card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 47vw;
+    padding: 5px 5px;
+}
+
+.archive-card #card-date{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2;
+
+}
+
+.archive-card #card-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25;
+}
