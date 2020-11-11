@@ -15,9 +15,46 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="alien-ufo.svg">
+   sodipodi:docname="alien-ufo.svg"
+   enable-background="new">
   <defs
-     id="defs2" />
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Clean Edges"
+       id="filter881">
+      <feGaussianBlur
+         stdDeviation="1.72534"
+         result="blur"
+         id="feGaussianBlur875" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="in"
+         result="composite1"
+         id="feComposite877" />
+      <feComposite
+         in="composite1"
+         in2="composite1"
+         k2="1"
+         operator="in"
+         result="composite2"
+         id="feComposite879" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1542"
+       x="-0.12094637"
+       width="1.2418927"
+       y="-0.11906832"
+       height="1.2381366">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.0674078"
+         id="feGaussianBlur1544" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,7 +63,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="21.215536"
+     inkscape:cx="-20.958332"
      inkscape:cy="28.740608"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -35,8 +72,25 @@
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
-     inkscape:window-y="747"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-global="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="13.296659,12.828938"
+       orientation="1,0"
+       id="guide1538"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11.358955,13.363477"
+       orientation="0,1"
+       id="guide1540"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -45,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,6 +108,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-270.54165)">
+    <ellipse
+       style="opacity:0.8;fill:#cdef8d;fill-opacity:1;stroke:none;stroke-width:0.18218057;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1542)"
+       id="path1536"
+       cx="13.296659"
+       cy="283.63651"
+       rx="10.590556"
+       ry="10.7576" />
     <g
        id="g1495"
        transform="matrix(0.21982482,0,0,0.21982482,-1.0227123,269.7519)">

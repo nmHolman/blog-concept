@@ -8,8 +8,6 @@
         "tn desc desc"
         "tn desc desc"
     ;
-
-    outline: 2px solid red;
     height: 150px;
     width: 90%;
     margin: 15px 0px;
@@ -24,17 +22,15 @@
 
 .card #card-title {
     grid-area: ti;
-    background-color: lightpink;
 }
 
 .card #card-date {
+    font-family:  'Syne Mono', monospace;
     grid-area: dt;
-    background-color: lightskyblue;
 }
 
 .card #card-summary {
     grid-area: desc;
-    background-color: lime;
 }
 
 .archive-card {

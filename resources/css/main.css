@@ -26,7 +26,8 @@ html, body {
 
 .header {
     grid-area: hd;
-    height: 125px;
+    height: 100px;
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,17 +45,33 @@ html, body {
     height: 50px;
     grid-area: nav;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0px 25px;
-    align-items: flex-start;
+    align-items: flex-end;
     background-color: #fff;
+}
+
+.nav .nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 15px;
+}
+
+.nav-active {
+    background-image: url("../images/ufo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav .nav-link {
     font-family: 'Syne Mono', monospace;
     font-size: 20px;
+    padding-top: 15px;
     color: #000;
     text-decoration: none;
+    
 }
 
 .feature {
