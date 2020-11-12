@@ -63,8 +63,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="-20.958332"
-     inkscape:cy="28.740608"
+     inkscape:cx="27.895261"
+     inkscape:cy="48.943659"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -72,12 +72,12 @@
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-y="644"
      inkscape:window-maximized="1"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-global="true"
+     inkscape:snap-global="false"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
@@ -109,7 +109,7 @@
      id="layer1"
      transform="translate(0,-270.54165)">
     <ellipse
-       style="opacity:0.8;fill:#cdef8d;fill-opacity:1;stroke:none;stroke-width:0.18218057;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1542)"
+       style="opacity:0.6;fill:#47ff8b;fill-opacity:1;stroke:none;stroke-width:0.18218057;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1542)"
        id="path1536"
        cx="13.296659"
        cy="283.63651"
