@@ -28,6 +28,7 @@ html, body {
 }
 
 .header {
+    z-index: 2;
     grid-area: hd;
     height: 150px;
     display: flex;
@@ -40,13 +41,14 @@ html, body {
 
 
 .nav {
+    z-index: 3;
     height: 50px;
     grid-area: nav;
     display: flex;
     justify-content: center;
     padding: 30px 20px 10px 20px;
     align-items: flex-end;
-    background-image: url("../images/nav-mobile.svg");
+    background-image: url("../images/nav-tablet.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 3px solid black;
@@ -79,10 +81,9 @@ html, body {
     grid-area: feat;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 25px 5px 50px 5px;
-    /* background-color: #F5FFFA; */
     background-color: #f5f5f5;
 }
 
@@ -102,7 +103,7 @@ html, body {
     
 }
 
-.archive #archive-title {
+.archive .archive-title {
     position: absolute;
     font-family: 'Barrio', cursive;
     font-size: 32px;
@@ -110,7 +111,7 @@ html, body {
     color:#000;
 }
 
-.archive #scroll {
+.archive .scroll {
     position: absolute;
     font-size: 16px;
     font-family: 'Barriecito', sans-serif;
@@ -173,4 +174,11 @@ html, body {
 
 .footer #github-link #github-icon {
     height: 30px;
+}
+
+@media(min-width: 480px) and (max-width: 768px) {
+    .feature {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
