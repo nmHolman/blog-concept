@@ -15,7 +15,7 @@
     background-color: white;
 }
 
-.card .card-link {
+.card-link {
     position: absolute;
     top: 0;
     left: 0;
@@ -78,6 +78,7 @@
 
 .archive-card {
     display: flex;
+    position: relative;
     flex-shrink: 0;
     flex-direction: column;
     align-items: center;
@@ -119,7 +120,8 @@
     line-height: 1.25;
 }
 
-@media(min-width: 768px) {
+/* MEDIUM SCREENS */
+@media(min-width: 481px) and (max-width: 1000px) {
     .feature {
         flex-direction: row;
     }
@@ -160,5 +162,58 @@
         align-self: center;
         max-height: 115px;
         overflow: hidden;        
+    }
+}
+
+/* LARGE SCREENS */
+@media(min-width: 1000px) {
+    .feature {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 35%;
+        height: 300px;
+        margin: 15px 15px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 110px auto auto auto;
+        gap: 5px;
+        grid-template-areas:
+        "tn tn tn"        
+        "dt dt dt"
+        "ti ti ti"        
+        "cs cs cs"
+        "lk lk lk";
+        transition: 400ms;
+    }
+
+    .card:hover {
+        transition: 500ms;
+        box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .card .card-date {
+        padding-top: 15px;
+    }
+
+    .card .card-title {
+        align-self: center;
+    }
+
+    .card .card-summary {
+        display: block;
+        align-self: center;
+        max-height: 115px;
+        overflow: hidden;        
+    }
+
+    .archive-card {
+        /* flex-shrink: 0; */
+        flex-direction: column;
+        height: 90px;
+        width: 75%;
+        padding: 5px 5px;   
     }
 }

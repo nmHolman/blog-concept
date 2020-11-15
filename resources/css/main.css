@@ -48,7 +48,7 @@ html, body {
     justify-content: center;
     padding: 30px 20px 10px 20px;
     align-items: flex-end;
-    background-image: url("../images/nav-tablet.svg");
+    background-image: url("../images/nav-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 3px solid black;
@@ -97,10 +97,8 @@ html, body {
     justify-content: flex-start;
     padding: 10px 0px;
     border-top: 6px solid black;
-    background-image: url("../images/pattern.svg");
-    background-size: cover;
-    /* background-attachment: local; */
-    
+    background-image: url("../images/small_archive_bg.svg");
+    background-size: cover;    
 }
 
 .archive .archive-title {
@@ -176,10 +174,10 @@ html, body {
     height: 30px;
 }
 
-@media(min-width: 768px) {
-    .container {
-        max-width: 1230px;
-        margin: 0 auto;
+/* MEDIUM SCREENS */
+@media(min-width: 481px) and (max-width: 1023px){
+    .nav {
+        background-image: url("../images/nav-tablet.svg");
     }
 
     .feature {
@@ -187,3 +185,57 @@ html, body {
         flex-wrap: wrap;
     }
 }
+
+/* LARGE SCREENS */
+@media(min-width: 1024px){
+    .container {
+        max-width: 1230px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+            "hd hd hd hd"
+            "nav nav nav nav"
+            "feat feat feat ar"
+            "feat feat feat ar"
+            "sb sb sb sb"
+            "ft ft ft ft"
+        ;
+    }
+
+    .nav {
+        background-image: url("../images/nav-desktop.svg");
+    }
+
+
+    .feature {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .archive {
+        height: auto;
+        flex-wrap: nowrap;
+        align-items: center;
+        border-top: none;
+        background-image: url("../images/large_archive_lg.svg");
+        justify-content: space-evenly;
+    }
+
+    .archive .archive-title {
+        position: relative;
+        margin: 0;
+        /* padding: 15px 0 15px 0; */
+    }
+    
+
+    .archive .scroll {
+        display: none;
+        
+    }
+}
+
