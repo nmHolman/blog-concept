@@ -1,13 +1,12 @@
 @import 'cards.css';
 @import 'typography.css';
-
+@import 'about.css';
+@import 'contact.css';
 
 
 html, body {
     margin: 0px;
 }
-
-
 
 .container {
     margin: 0px;

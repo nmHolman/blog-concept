@@ -27,3 +27,7 @@ p {
     margin: 0px 0px;
 
 }
+
+.strong-text {
+    font-weight: 700;
+}

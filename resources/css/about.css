@@ -1,0 +1,31 @@
+.container-about {
+    max-width: 1230px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas: 
+        "hd hd hd hd"
+        "nav nav nav nav"
+        "abt abt abt abt"
+        "sb sb sb sb"
+        "ft ft ft ft"
+    ;
+}
+
+.about {
+    grid-area: abt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 75px 0
+}
+
+.about-text {
+    width: 75%;
+}
