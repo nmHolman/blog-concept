@@ -1,0 +1,120 @@
+.container-post {
+    min-height: 100vh;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas: 
+        "hdp hdp hdp hdp"
+        "ar ar ar ar"
+        "sb sb sb sb"
+        "ft ft ft ft"
+    ;
+}
+
+.header-post {
+    grid-area: hdp;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    height: 75px;
+    border-bottom: 2px solid #000;
+}
+
+.header-post #site-title {
+    color: #000;
+    margin: 0px 0px;
+    font-size: 22px;
+}
+
+.nav-post {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-post .nav-link {
+    padding-top: 0px;
+}
+
+.article {
+    grid-area: ar;
+}
+
+.article .article-title {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    padding: 10px 20px;
+    background-image: url('../images/title_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #000;
+}
+
+.article .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.article .author .author-pic {
+    width: 50px;
+    padding-right: 15px;
+}
+
+.article .article-main {
+    padding: 25px 25px;
+}
+
+.article .article-main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article .article-main figcaption {
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .header-post {
+        grid-area: hdp;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+
+    .nav-post {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-post {
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+
+    .article .article-main {
+        padding: 25px 75px;
+    }
+
+    .article-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article .article-main img {
+        max-width: 50%;
+        height: auto;
+    }
+}
