@@ -4,10 +4,12 @@
     width: 100%;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto auto auto;
     grid-template-areas: 
         "hdp hdp hdp hdp"
         "ar ar ar ar"
+        "abt abt abt abt"
+        "shr shr shr shr"
         "sb sb sb sb"
         "ft ft ft ft"
     ;
@@ -64,7 +66,7 @@
     padding-top: 25px;
 }
 
-.article .author .author-pic {
+.article .author .author-avatar {
     width: 50px;
     padding-right: 15px;
 }
@@ -73,7 +75,7 @@
     padding: 25px 25px;
 }
 
-.article .article-main img {
+.article .article-main .image {
     max-width: 100%;
     height: auto;
 }
@@ -82,7 +84,54 @@
     text-align: center;
 }
 
+.author-about {
+    grid-area: abt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px 50px 25px;
+}
+
+.author-about .author-avatar {
+    max-height: 125px;
+    padding-right: 15px;
+}
+
+.author-about .author-bio {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.share {
+    grid-area: shr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.share .share-links {
+    display: flex;
+    align-items: baseline;
+}
+
+.share-icon {
+    max-height: 40px;
+    padding: 25px 10px;
+}
+
 @media(min-width: 1024px){
+    .container-post {
+        grid-template-rows: auto 1fr auto auto auto ;
+        grid-template-areas: 
+        "hdp hdp hdp hdp"
+        "ar ar ar ar"
+        "abt abt shr shr"
+        "sb sb sb sb"
+        "ft ft ft ft"
+    ;
+    }
+
     .header-post {
         grid-area: hdp;
         display: flex;
@@ -113,8 +162,20 @@
         align-items: center;
     }
 
-    .article .article-main img {
+    .article .article-main .image {
         max-width: 50%;
         height: auto;
+    }
+
+    .author-about{
+        justify-content: flex-end;
+    }
+
+    .author-about .author-info{
+        width: 50%;
+    }
+
+    .author-about .author-avatar {
+        padding-right: 25px;
     }
 }
